@@ -32,7 +32,7 @@ mavenNode{
   def envStage = utils.environmentNamespace('staging')
   def envProd = utils.environmentNamespace('production')
 
-  git 'http://gogs/gogsadmin/credgenerator.git'
+  git 'https://github.com/Tomtom76/credgenerator.git'
 
   echo 'NOTE: running pipelines for the first time will take longer as build and base docker images are pulled onto the node'
   container(name: 'maven') {
