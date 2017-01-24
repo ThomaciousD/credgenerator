@@ -1,0 +1,13 @@
+---
+buildName: "credgenerator"
+links:
+  Git: "http://gogs/gogsadmin/credgenerator.git"
+  Job: "http://192.168.64.2:32188/job/credgenerator"
+  Production: "http://10.0.0.45:80/kubernetes/pods?namespace=default-production"
+  Staging: "http://10.0.0.45:80/kubernetes/pods?namespace=default-staging"
+  Testing: "http://10.0.0.45:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+  Staging: "default-staging"
+  Production: "default-production"
+useLocalFlow: true
